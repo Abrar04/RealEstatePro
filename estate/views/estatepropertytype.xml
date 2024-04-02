@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <!--Form-->
+    <record id="view_estate_property_type_form" model="ir.ui.view">
+        <field name="name">estate.property.type.form</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <form>
+
+
+                <field name="name" string="Name"/>
+
+            </form>
+        </field>
+    </record>
+    <!--Form-->
+
+    <!--Tree-->
+    <record id="view_estate_property_type_tree" model="ir.ui.view">
+        <field name="name">estate.property.tree</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="name" string="Name"/>
+
+
+            </tree>
+        </field>
+    </record>
+    <!--Tree-->
+
+    <!--Search-->
+    <record id="view_estate_property_type_search" model="ir.ui.view">
+        <field name="name">estate.property.search</field>
+        <field name="model">estate.property.type</field>
+        <field name="arch" type="xml">
+            <search>
+
+                <field name="name" string="Name"/>
+
+
+            </search>
+        </field>
+    </record>
+    <!--Search-->
+
+
+    <!--    Action and Menu Working-->
+    <record id="action_Real_Estate_type" model="ir.actions.act_window">
+        <field name="name">Properties Type</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_SubMSetting" name="Properties Type" parent="menu_SubSetting" action="action_Real_Estate_type"
+              sequence="20"/>
+
+</odoo>
+
+

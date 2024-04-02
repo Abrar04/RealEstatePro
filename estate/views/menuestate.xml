@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <menuitem id="menu_Estate" name="Real-Estate" sequence="10"/>
+
+    <menuitem id="menu_SubEstate" name="Advertisement" parent="menu_Estate" sequence="10"/>
+
+    <menuitem id="menu_SubRealEstate" name="Properties" parent="menu_SubEstate" sequence="10"/>
+
+
+<!--    <menuitem id="menu_setting" name="Setting" sequence="20"/>-->
+
+    <menuitem id="menu_SubSetting" name="Setting" parent="menu_Estate"  sequence="20"/>
+
+    <menuitem id="menu_SubMSetting" name="Properties Type" parent="menu_SubSetting" sequence="20"/>
+
+
+
+    <menuitem id="menu_Subtag" name="Tags" parent="menu_Estate"  sequence="30"/>
+
+    <menuitem id="menu_SubMTag" name="Tag" parent="menu_Subtag" sequence="30"/>
+
+
+
+</odoo>
